@@ -65,14 +65,23 @@ public class App {
                 case 2:
                     System.out.println("Realizar conversión a decimal...");
                     // Llamar a método para convertir a decimal
+                    int decimal = scanner.nextInt();
+                    System.out.println("El número en decimal es: " + decimal);
                     break;
                 case 3:
                     System.out.println("Realizar conversión a hexadecimal...");
                     // Llamar a método para convertir a hexadecimal
+                    String hexadecimal = scanner.next();
+                    int decimalHexadecimal = Integer.parseInt(hexadecimal, 16);
+                    System.out.println("El número en decimal es: " + decimalHexadecimal);
                     break;
                 case 4:
                     System.out.println("Realizar conversión a octal...");
                     // Llamar a método para convertir a octal
+                    String octal = scanner.next();
+                    int decimalOctal = Integer.parseInt(octal, 8);
+                    System.out.println("El número en decimal es: " + decimalOctal);
+
                     break;
                 case 5:
                     return; // Volver al menú principal
